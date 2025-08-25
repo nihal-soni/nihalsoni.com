@@ -5,6 +5,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/common/Navbar";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 export const fontSans = FontSans({
   weight: ["400", "500", "600"],
@@ -31,10 +32,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
-        <Navbar/>
-        {children}
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          > 
+            <Navbar/>
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );
