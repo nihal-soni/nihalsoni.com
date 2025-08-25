@@ -1,5 +1,5 @@
 export interface NavItem {
-  label: string;
+  title: string;
   href: string;
 }
 
@@ -12,16 +12,20 @@ export const navbarConfig = {
   },
   navItems: [
     {
-      label: 'Work',
-      href: '/work-experience',
+      title: 'About',
+      href: '/',
     },
     {
-      label: 'Blogs',
+      title: 'Projects',
+      href: '/projects',
+    },
+    {
+      title: 'Blogs',
       href: '/blog',
     },
     {
-      label: 'Projects',
-      href: '/projects',
-    },
+      title: 'Contact',
+      href: '/contact'
+    }
   ] as NavItem[],
 };

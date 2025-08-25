@@ -79,37 +79,33 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: lab(2.51107% 0.242703 -0.886115);
+  --foreground: lab(98.26% 0 0);
+  --primary: lab(26.8019% 1.35387 -4.68303);
+  --primary-foreground: lab(98.26% 0 0);
+  --secondary: lab(15.7305% 0.613764 -2.16959);
+  --secondary-foreground: lab(98.26% 0 0);
+  --muted: lab(15.7305% 0.613764 -2.16959);
+  --muted-foreground: lab(65.6464% 1.53497 -5.42429);
+  --card: lab(8.30603% 0.618205 -2.16572);
+  --card-foreground: lab(98.26% 0 0);
+  --popover: lab(8.30603% 0.618205 -2.16572);
+  --popover-foreground: lab(98.26% 0 0);
+  --popover-border: lab(26.8019% 1.35387 -4.68303);
+  --accent: lab(15.7305% 0.613764 -2.16959);
+  --accent-foreground: lab(98.26% 0 0);
+  --border: lab(15.7305% 0.613764 -2.16959);
+  --input: lab(15.7305% 0.613764 -2.16959);
+  --ring: lab(47.8878% 1.65477 -5.77283);
+  --success: lab(70.5521% -66.5147 45.8073);
+  --destructive: lab(40.4273% 67.2623 53.7441);
+  --link: lab(54.1736% 13.3369 -74.6839);
+  --code: lab(8.30603% 0.618205 -2.16572);
+  --code-foreground: lab(98.26% 0 0);
+  --code-number: lab(47.8878% 1.65477 -5.77283);
+  --code-highlight: lab(15.7305% 0.613764 -2.16959);
+  --selection: lab(98.26% 0 0);
+  --selection-foreground: lab(2.51107% 0.242703 -0.886115);
 }
 
 @layer base {

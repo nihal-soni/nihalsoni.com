@@ -10,8 +10,8 @@ export const Container = ({
   return (
     <div
       className={cn(
-        "container mx-auto max-w-4xl px-4 animate-fade-in-blur border",
-        className
+        "animate-fade-in-blur min-h-screen container mx-auto w-full max-w-5xl border bg-white  dark:bg-black",
+        className,
       )}
     >
       {children}
