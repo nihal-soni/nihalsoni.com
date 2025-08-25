@@ -4,6 +4,7 @@ import {
   IBM_Plex_Sans as FontSans,
 } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/common/Navbar";
 
 export const fontSans = FontSans({
   weight: ["400", "500", "600"],
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
+        <Navbar/>
         {children}
       </body>
     </html>
