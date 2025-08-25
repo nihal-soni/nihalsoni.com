@@ -5,7 +5,6 @@ import {
 } from "next/font/google";
 import "./globals.css";
 
-
 export const fontSans = FontSans({
   weight: ["400", "500", "600"],
   display: "swap",
@@ -32,9 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${fontSans.variable} ${fontMono.variable} antialiased`}
-      >
+      <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
         {children}
       </body>
     </html>
