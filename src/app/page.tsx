@@ -1,7 +1,9 @@
-
-
 export default function Home() {
   return (
-  <div className="text-2xl">nihalsoni.com</div>
-);
-};
+    <>
+    <div>
+      
+    </div>
+    </>
+  );
+}
