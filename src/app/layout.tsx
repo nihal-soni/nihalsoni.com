@@ -6,6 +6,7 @@ import {
 import "./globals.css";
 import { Navbar } from "@/components/common/Navbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Separator } from "@/components/ui/separator";
 
 export const fontSans = FontSans({
   weight: ["400", "500", "600"],
@@ -23,7 +24,8 @@ export const fontMono = FontMono({
 
 export const metadata: Metadata = {
   title: "Nihal soni |  A Full stack Developer from India ",
-  description: "I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's. Explore my projects, experience, and technical expertise.",
+  description:
+    "I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's. Explore my projects, experience, and technical expertise.",
 };
 
 export default function RootLayout({
@@ -34,15 +36,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          > 
-            <Navbar/>
-            {children}
-          </ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <Separator/>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -7,13 +7,13 @@ export const navbarConfig = {
   logo: {
     src: '/assets/nihallogo.png',
     alt: 'logo',
-    width: 100,
-    height: 100,
+    width: 50,
+    height: 50,
   },
   navItems: [
     {
       title: 'About',
-      href: '/',
+      href: '/about',
     },
     {
       title: 'Projects',
